@@ -15,14 +15,14 @@ class aa2 {
         Roll = sc.nextInt();
         System.out.println("Enter Fee");
         fee = sc.nextDouble();
-        System.out.println("-------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
     }
 
     void put() {
-        System.out.println("Name:   " + Name);
-        System.out.println("Roll:   " + Roll);
-        System.out.println("Fee:    " + fee);
-        System.out.println("-------------------------------------------------------------------");
+        System.out.println("Name:                            " + Name);
+        System.out.println("Roll:                            " + Roll);
+        System.out.println("Fee:                             " + fee);
+        System.out.println("----------------------------------------");
 
     }
 }
