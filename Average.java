@@ -28,17 +28,16 @@ public class Average {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Size of the Array");
         int size = sc.nextInt();
-        avg ob[] = new avg[object];
         System.out.println("Enter the Number of  Object Wants to Create");
         int object = sc.nextInt();
+        avg ob[] = new avg[object];
+
         for (int i = 0; i < object; i++) {
             ob[i] = new avg();
-        }
-        for (int i = 0; i < size; i++) {
             ob[i].takingInput(size);
-        }
-        for (int i = 0; i < size; i++) {
+            System.out.println(i + 1 + " Answer");
             ob[i].cal(size);
+
         }
     }
 }
