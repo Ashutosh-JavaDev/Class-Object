@@ -15,7 +15,11 @@ public class RectangleAreaandPerimeter {
         System.out.println("Enter the Length of rectangle");
         float length=sc.nextFloat();
         System.out.println("Enter the Breadth of the Rectangle");
-        float bredth=sc.nextFloat();
-        
+        float breadth=sc.nextFloat();
+        Area ob=new Area();
+       double are= ob.returnArea(length, breadth);
+        System.out.println("Area Of Rectangle:  "+are);
+        double per=ob.returnperi(length, breadth);
+        System.out.println("Perimeter of Rectangle:     "+per);
     }
 }
