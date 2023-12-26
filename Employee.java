@@ -13,6 +13,7 @@ class Emp{
         System.out.println("------------------------------");
     }
     void disp(){
+        System.out.println("------------------------------");
         System.out.println("Employee Name:      "+Name);
         System.out.println("Address:            "+Address);
         System.out.println("Year of Joining:    "+year);
@@ -21,6 +22,17 @@ class Emp{
 public class Employee {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        
+        System.out.println("Enter the Number of Employee value  Want to Insert");
+        int Insert=sc.nextInt();
+        Emp ob[]=new Emp[Insert];
+        System.out.println("Enter the  Details of the Employee");
+        for(int i=0;i<Insert;i++){
+            ob[i]=new Emp();
+            ob[i].get();
+        } 
+        System.out.println("Employee Details");
+        for(int i=0;i<Insert;i++){
+            ob[i].disp();
+        }
     }
 }
