@@ -1,6 +1,6 @@
 import java.util.*;
 class Triangle{
-    float length,breadth,height;
+    float length=3,breadth=4,height=5;
     void area(){
         double ar=0.5*breadth*height;
         System.out.println("Area of Triangle:   "+ar);
