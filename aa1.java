@@ -13,6 +13,13 @@ class aa1 {
     }
 
     void put() {
-        
+        a = a + b;
+        b = a - b;
+        a = a - b;
+    }
+
+    void disp() {
+        System.out.println("Value of A after swap: " + a);
+        System.out.println("Value  of B after Swap: " + b);
     }
 }
