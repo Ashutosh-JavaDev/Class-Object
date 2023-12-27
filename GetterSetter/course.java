@@ -38,6 +38,7 @@ class course {
             case 1:
                 System.out.println("How Many New Subject Wants to Add");
                 int number = sc.nextInt();
+                sc.nextLine();
                 arr = new String[number];
                 System.out.println("Enter The name of the courses");
                 for (int i = 0; i < number; i++) {
@@ -52,7 +53,7 @@ class course {
                 System.out.println("Enter the Course want to delete");
                 String newCourse = sc.nextLine();
                 if (newCourse.equalsIgnoreCase(Course)) {
-                    String str = Course.replace(Course, "");
+                  Course="";
                     System.out.println("Course SucessFully  Remove");
                 } else {
                     System.out.println("Course Not present in Your Data");
