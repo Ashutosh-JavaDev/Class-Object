@@ -25,5 +25,16 @@ class employee {
     int setYear(){
         return Year;
     }
-    
+    void check(){
+        if(Year>=1943){
+            int present=2023-Year;
+            System.out.println("Year of Working:        "+present);
+        }
+        else if((Year>=1935) && (Year<=1942)){
+            System.out.println("Please take Retirement and Visit Kashi");
+        }
+        else{
+            System.out.println("Enter Valid Year of Joining");
+        }
+    }
 }

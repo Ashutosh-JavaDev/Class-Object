@@ -6,6 +6,10 @@ public class Employee {
         employee ob=new employee();
         System.out.println("Enter Employee Name");
         ob.getName(sc.nextLine());
-        
+        System.out.println("Enter Your Salary");
+        ob.getSalary(sc.nextInt());
+        System.out.println("Enter Joining year");
+        ob.getYear(sc.nextInt());
+        ob.check();
     }
 }
