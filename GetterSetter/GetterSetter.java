@@ -8,6 +8,7 @@ public class GetterSetter {
         ob.getName(sc.nextLine());
         System.out.println("Enter Age");
         ob.getAge(sc.nextInt());
+        sc.nextLine();
         System.out.println("Enter Gender");
         ob.getGender(sc.nextLine().charAt(0));
         System.out.println("Enter Base Fare");

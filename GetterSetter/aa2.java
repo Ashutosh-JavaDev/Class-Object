@@ -39,12 +39,12 @@ class aa2 {
 
     double cal() {
         double da = 0;
-        if (age <= 60) {
-            da = da * .30;
+        if (age >= 60) {
+            da = fare * .30;
         } else if (age <= 20) {
-            da = da * .20;
+            da = fare * .20;
         } else if (Gender == 'F' || Gender == 'f') {
-            da = da * .10;
+            da = fare * .10;
         }
         return da;
     }
