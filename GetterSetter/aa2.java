@@ -1,3 +1,4 @@
+package GetterSetter;
 class aa2 {
     private int age;
     private String Name;
