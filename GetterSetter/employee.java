@@ -12,12 +12,18 @@ class employee {
         return Name;
     }
 
-    void getvalue(int Salary, int Year) {
+    void getSalary(int Salary) {
         this.Salary = Salary;
-        this.Year = Year;
     }
 
-    int setValue() {
+    int setSalary() {
         return Salary;
     }
+    void getYear(int Year){
+        this.Year=Year;
+    }
+    int setYear(){
+        return Year;
+    }
+    
 }
