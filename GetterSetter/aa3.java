@@ -32,4 +32,11 @@ class aa3 {
         return Amount;
     }
 
+    void getPress(int press) {
+        this.press = press;
+    }
+
+    int setPress() {
+        return press;
+    }
 }
