@@ -2,7 +2,7 @@ package GetterSetter;
 
 class employee {
     String Name;
-    int Salary, year;
+    int Salary, Year;
 
     void getName(String Name) {
         this.Name = Name;
@@ -12,4 +12,12 @@ class employee {
         return Name;
     }
 
+    void getvalue(int Salary, int Year) {
+        this.Salary = Salary;
+        this.Year = Year;
+    }
+
+    int setValue() {
+        return Salary;
+    }
 }
