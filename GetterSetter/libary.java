@@ -6,7 +6,7 @@ class libary {
     String arr1[], arr[];
     int Press;
 
-    void getName(String arr1[]) {
+    void getName() {
         Scanner sc = new Scanner(System.in);
         System.out.println("How Many Books want to Insert In Libary");
         int Number = sc.nextInt();
@@ -46,6 +46,9 @@ class libary {
                     for (int i = 0; i < Number; i++) {
                         System.out.println(arr[i]);
                     }
+                    for(int i=0;i<arr1.length;i++){
+                        System.out.println(arr1[i]);
+                    }
 
                 }
                 break;
@@ -54,7 +57,7 @@ class libary {
                 String removeBooks = sc.nextLine();
                 for (int i = 0; i < arr1.length; i++) {
                     if (arr1[i].equalsIgnoreCase(removeBooks)) {
-                        arr1[i] = "";
+                        arr1[i]="Book Removed";
                     }
                 }
                 System.out.println("Libary After Remove Old Book");
