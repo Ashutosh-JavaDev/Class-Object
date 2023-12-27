@@ -48,6 +48,18 @@ class course {
                     System.out.println(arr[i]);
                 }
                 break;
+            case 2:
+                System.out.println("Enter the Course want to delete");
+                String newCourse = sc.nextLine();
+                if (newCourse.equalsIgnoreCase(Course)) {
+                    String str = Course.replace(Course, "");
+                    System.out.println("Course SucessFully  Remove");
+                } else {
+                    System.out.println("Course Not present in Your Data");
+                }
+                break;
+            default:
+                System.out.println("Invalid Press");
         }
     }
 }
