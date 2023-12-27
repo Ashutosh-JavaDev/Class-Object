@@ -14,9 +14,10 @@ public class Bank {
         ob.getAmount(sc.nextDouble());
         System.out.println("Press.1 to Withdraw Money\nPress2. to Add Money");
         ob.getPress(sc.nextInt());
-        ob.check();
         System.out.println("Name:                   " + ob.setName());
         System.out.println("Year Of Joining:        " + ob.setYear());
         System.out.println("Original Amount:        " + ob.setAmount());
+        ob.check();
+
     }
 }

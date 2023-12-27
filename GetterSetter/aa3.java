@@ -56,6 +56,7 @@ class aa3 {
                 break;
             case 2:
                 System.out.println("How Much Money want to add");
+                Add=sc.nextDouble();
                 double answer = Amount + Add;
                 System.out.println("Total Amount:           " + answer);
                 break;
