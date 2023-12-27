@@ -5,7 +5,7 @@ import java.util.*;
 public class Bank {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        aa3 ob = new aa3();
+        bank ob = new bank();
         System.out.println("Enter Your Name");
         ob.getName(sc.nextLine());
         System.out.println("Enter Year of Joining");

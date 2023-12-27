@@ -1,5 +1,5 @@
 package GetterSetter;
-class aa2 {
+class getSet {
     private int age;
     private String Name;
     private char Gender;

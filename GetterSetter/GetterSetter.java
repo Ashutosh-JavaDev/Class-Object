@@ -3,7 +3,7 @@ import java.util.*;
 public class GetterSetter {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        aa2 ob=new aa2();
+        getSet ob=new getSet();
         System.out.println("Enter Passenger Name");
         ob.getName(sc.nextLine());
         System.out.println("Enter Age");

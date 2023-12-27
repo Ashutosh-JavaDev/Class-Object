@@ -2,7 +2,7 @@ package GetterSetter;
 
 import java.util.*;
 
-class aa3 {
+class bank {
     String Name;
     int year;
     Double Amount, Del, Add;
