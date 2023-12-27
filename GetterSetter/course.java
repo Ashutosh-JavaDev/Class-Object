@@ -45,19 +45,14 @@ class course {
                     arr[i] = sc.nextLine();
                 }
                 System.out.println("New Details of Courses After Updated");
+                System.out.println(setCourse());
                 for (int i = 0; i < number; i++) {
                     System.out.println(arr[i]);
                 }
                 break;
             case 2:
-                System.out.println("Enter the Course want to delete");
-                String newCourse = sc.nextLine();
-                if (newCourse.equalsIgnoreCase(Course)) {
-                  Course="";
-                    System.out.println("Course SucessFully  Remove");
-                } else {
-                    System.out.println("Course Not present in Your Data");
-                }
+             Course="";
+             System.out.println("Course SucessFully Removed");
                 break;
             default:
                 System.out.println("Invalid Press");
