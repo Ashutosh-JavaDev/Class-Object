@@ -13,6 +13,18 @@ class aa2 {
     }
 
     void getName(String Name) {
+        this.Name = Name;
+    }
 
+    String setName() {
+        return Name;
+    }
+
+    void getGender(char Gender) {
+        this.Gender = Gender;
+    }
+
+    char setGender() {
+        return Gender;
     }
 }
