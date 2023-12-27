@@ -27,4 +27,12 @@ class aa2 {
     char setGender() {
         return Gender;
     }
+
+    void getFare(double fare) {
+        this.fare = fare;
+    }
+
+    double setFare() {
+        return fare;
+    }
 }
