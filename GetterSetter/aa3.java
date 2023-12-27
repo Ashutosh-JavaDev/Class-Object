@@ -5,8 +5,8 @@ import java.util.*;
 class aa3 {
     String Name;
     int year;
-    Double Amount;
-    int press, Add, Del;
+    Double Amount, Del, Add;
+    int press;
 
     void getName(String Name) {
         this.Name = Name;
@@ -38,5 +38,24 @@ class aa3 {
 
     int setPress() {
         return press;
+    }
+
+    void check() {
+        Scanner sc = new Scanner(System.in);
+        switch (press) {
+            case 1:
+                this.Del = Del;
+                System.out.println("Enter Amount Want To Withdraw");
+                Del = sc.nextDouble();
+                if (Del <= Amount) {
+                    double output = Amount - Del;
+                    System.out.println("Balance After Withdraw:     " + output);
+                }
+                break;
+            case 2:
+                this.Add = Add;
+                System.out.println("Enter Amount Want to Credit");
+
+        }
     }
 }
