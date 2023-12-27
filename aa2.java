@@ -35,4 +35,16 @@ class aa2 {
     double setFare() {
         return fare;
     }
+
+    double cal() {
+        double da = 0;
+        if (age <= 60) {
+            da = da * .30;
+        } else if (age <= 20) {
+            da = da * .20;
+        } else if (Gender == 'F' || Gender == 'f') {
+            da = da * .10;
+        }
+        return da;
+    }
 }
