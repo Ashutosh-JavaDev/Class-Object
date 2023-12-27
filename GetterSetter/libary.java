@@ -48,6 +48,23 @@ class libary {
                     }
 
                 }
+                break;
+            case 2:
+                System.out.println("Enter The Name of the Books Want to  remove");
+                String removeBooks = sc.nextLine();
+                for (int i = 0; i < arr1.length; i++) {
+                    if (arr1[i].equalsIgnoreCase(removeBooks)) {
+                        arr1[i] = "";
+                    }
+                }
+                System.out.println("Libary After Remove Old Book");
+                for (int i = 0; i < arr1.length; i++) {
+                    System.out.println(arr1[i]);
+                }
+                break;
+            default:
+                System.out.println("Invalid Press");
+                break;
         }
     }
 }
