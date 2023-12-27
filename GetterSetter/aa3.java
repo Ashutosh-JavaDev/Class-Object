@@ -55,7 +55,12 @@ class aa3 {
             case 2:
                 this.Add = Add;
                 System.out.println("Enter Amount Want to Credit");
-
+                double answer = Amount + Add;
+                System.out.println("Total Amount:           " + answer);
+                break;
+            default:
+                System.out.println("Invalid Press");
+                break;
         }
     }
 }
