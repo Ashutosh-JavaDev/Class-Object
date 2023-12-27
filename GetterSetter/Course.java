@@ -16,7 +16,6 @@ public class Course {
         System.out.println("Grade:              " + ob.setGrade());
         System.out.println("Course:             " + ob.setCourse());
         System.out.println("Press1.to add Courses\nPress2.to remove Courses");
-
-        ob.Courses();
+        ob.Courses(sc.nextInt());
     }
 }

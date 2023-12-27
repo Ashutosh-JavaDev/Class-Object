@@ -31,7 +31,7 @@ class course {
         return Grade;
     }
 
-    void Courses() {
+    void Courses(int Press) {
         Scanner sc = new Scanner(System.in);
         this.Press = Press;
         switch (Press) {
