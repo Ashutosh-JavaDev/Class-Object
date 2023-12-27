@@ -45,7 +45,7 @@ class aa3 {
         switch (press) {
             case 1:
                 this.Del = Del;
-                System.out.println("Enter Amount Want To Withdraw");
+                System.out.println("How much Money Want to withdraw");
                 Del = sc.nextDouble();
                 if (Del <= Amount) {
                     double output = Amount - Del;
@@ -54,7 +54,7 @@ class aa3 {
                 break;
             case 2:
                 this.Add = Add;
-                System.out.println("Enter Amount Want to Credit");
+                System.out.println("How Much Money want to add");
                 double answer = Amount + Add;
                 System.out.println("Total Amount:           " + answer);
                 break;

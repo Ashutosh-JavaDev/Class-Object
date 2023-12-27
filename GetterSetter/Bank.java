@@ -10,6 +10,7 @@ public class Bank {
         ob.getYear(sc.nextInt());
         System.out.println("Enter Amount");
         ob.getAmount(sc.nextDouble());
-        
+        System.out.println("Press.1 to Withdraw Money\nPress2. to Add Money");
+        ob.getPress(sc.nextInt());
     }
 }
