@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 class inventory {
     String HighInventory[], LowInventory[];
-    int Press;
-
     void geyHighInventory(String HighInventory[]) {
         this.HighInventory = HighInventory;
     }
