@@ -15,14 +15,10 @@ class musiclibary {
 
     void randomSong() {
         Random random = new Random();
-        for (int i = 0; i < SongCollection.length; i++) {
-            // Use nextInt to generate a random integer; nextString does not exist
-            SongCollection[i] = String.valueOf(random.nextInt(100));
-        }
-        System.out.println("Played Song:");
-        for (String value : SongCollection) {
-            System.out.println(value);
-        }
+        int randomIndex = random.nextInt(SongCollection.length);
+
+        System.out.println("Played Random Song:");
+        System.out.println(SongCollection[randomIndex]);
     }
 
     void disp() {
@@ -33,6 +29,7 @@ class musiclibary {
             case 1:
                 System.out.println("How many song you want to add in List");
                 int songnum = sc.nextInt();
+                sc.nextLine();
                 String newSongList[] = new String[songnum];
                 System.out.println("Enter the Song in the List");
                 for (int i = 0; i < songnum; i++) {
@@ -49,6 +46,7 @@ class musiclibary {
             case 2:
                 System.out.println("Enter the name of Song You Want to delete");
                 String SongName = sc.nextLine();
+                sc.nextLine();
                 for (int i = 0; i < SongCollection.length; i++) {
                     if (SongCollection[i].equalsIgnoreCase(SongName)) {
                         SongCollection[i] = "Song Remove";
