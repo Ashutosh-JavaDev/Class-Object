@@ -22,12 +22,6 @@ class inventory {
         return LowInventory;
     }
 
-    void dispLowInventory() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("How Many Product You Want to Add in low Inventory");
-        int num = sc.nextInt();
-    }
-
     void dispHighInventory() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Press1.to Add Product\nPress2.to Remove Product");
@@ -36,6 +30,20 @@ class inventory {
             case 1:
                 System.out.println("How Many Product You Want to Add in High Inventory");
                 int num = sc.nextInt();
+                String HighInventor[] = new String[num];
+                System.out.println("Enter the Name of Product");
+                for (int i = 0; i < num; i++) {
+                    HighInventor[i] = sc.nextLine();
+                }
+                System.out.println("Updated Inventory");
+                for (int i = 0; i < num; i++) {
+                    System.out.println(HighInventor[i]);
+                }
+                for (int i = 0; i < HighInventory.length; i++) {
+                    System.out.println(HighInventory[i]);
+                }
+                break;
+            case 2:
         }
     }
 }
