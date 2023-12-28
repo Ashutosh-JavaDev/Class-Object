@@ -59,4 +59,16 @@ class inventory {
             System.out.println("Invalid Press");
         }
     }
+    void compareInventory(){
+        for(int i=0;i<HighInventory.length;i++){
+            for(int j=0;j<LowInventory.length;j++){
+                if(HighInventory[i].equalsIgnoreCase(LowInventory[i])){
+                    System.out.println("Product in High and Low Inventory are Equal");
+                }
+                else{
+                    System.out.println("Product Are Not Same in Both Inventory");
+                }
+            }
+        }
+    }
 }
