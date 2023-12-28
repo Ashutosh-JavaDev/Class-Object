@@ -13,5 +13,10 @@ public class MusicLibary {
         for(int i=0;i<Number;i++){
             str[i]=sc.nextLine();   
         }
+        System.out.println("Song in List:");
+        for(int i=0;i<Number;i++){
+            System.out.println(str[i]);
+        }
+        
     }
 }
