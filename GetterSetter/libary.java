@@ -57,7 +57,7 @@ class libary {
                 String removeBooks = sc.nextLine();
                 for (int i = 0; i < arr1.length; i++) {
                     if (arr1[i].equalsIgnoreCase(removeBooks)) {
-                        arr1[i]="Book Removed";
+                        arr1[i]="";
                     }
                 }
                 System.out.println("Libary After Remove Old Book");
