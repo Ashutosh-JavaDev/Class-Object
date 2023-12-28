@@ -37,11 +37,11 @@ class shape {
             this.Height = Height;
         }
 
-        float putLength() {
+        float putBase() {
             return Base;
         }
 
-        float PutBreadth() {
+        float putHeight() {
             return Height;
         }
 
