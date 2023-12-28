@@ -52,6 +52,12 @@ class resturant {
                 break;
             default:
             System.out.println("Invalid Press");
+            break;
         }
+    }
+
+    float calAvgerage(){
+        float calculate=resturantRating/totalItem;
+        return calculate;
     }
 }
