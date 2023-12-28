@@ -8,4 +8,10 @@ class musiclibary {
     String[] setSong(){
         return SongCollection;
     }
+    void Randomsong(){
+        Random song=new Random();
+        for(int i=0;i<SongCollection.length;i++){
+            
+        }
+    }
 }
