@@ -18,11 +18,14 @@ public class Resturant {
             Menu[i] = sc.nextLine();
             System.out.println("Item Price:");
             RestPrice[i] = sc.nextFloat();
+            sc.nextLine();
         }
         System.out.println("What is the Rating Of your Resturant");
         ob.getresurantRating(sc.nextFloat());
         ob.disp();
-        System.out.println(ob.setData() + ":   " + ob.setPrice());
+        for (int i = 0; i < ob.totalItem; i++) {
+            System.out.println(Menu[i] + " - $" + RestPrice[i]);
+        }
         System.out.println("Average Rating of Your Resturant:       "+ob.calAvgerage());
     }
 }

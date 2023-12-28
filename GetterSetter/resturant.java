@@ -36,14 +36,21 @@ class resturant {
         Scanner sc = new Scanner(System.in);
         System.out.println("Press 1.to add Item in the List\nPress 2. to remove item from the list");
         int Press = sc.nextInt();
+        sc.nextLine();
         switch (Press) {
             case 1:
                 System.out.println("How many item want to add list");
                 int newItem = sc.nextInt();
+                sc.nextLine();
                 String newItemName[] = new String[newItem];
+                Float newPrice[]=new Float[newItem];
                 System.out.println("Enter Item Name");
                 for (int i = 0; i < newItem; i++) {
+                    System.out.println("Item Name:");
                     newItemName[i] = sc.nextLine();
+                    System.out.println("Item Price:");
+                    newPrice[i]=sc.nextFloat();
+                    sc.nextLine();
                 }
                 System.out.println("List after Updated");
                 for (int i = 0; i < Menuname.length; i++) {
@@ -51,6 +58,10 @@ class resturant {
                 }
                 for (int i = 0; i < newItemName.length; i++) {
                     System.out.println(newItemName[i]);
+                }
+                System.out.println("Restaurant Menu:");
+                for (int i = 0; i < totalItem; i++) {
+                    System.out.println(newItemName[i] + " - $" + newPrice[i]);
                 }
                 break;
             case 2:
