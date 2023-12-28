@@ -4,14 +4,28 @@ import java.util.Scanner;
 
 class resturant {
     public String Menuname[];
-    float Price, resturantRating;
+    float Price[], resturantRating;
     int totalItem;
 
-    void getData(String[] Menuname, float Price, float resturantRating, int totalItem) {
+    void getMenu(String[] Menuname) {
         this.Menuname = Menuname;
+    }
+
+    void getPrice(float Price[]) {
         this.Price = Price;
+    }
+    float[]setPrice(){
+        return Price;
+    }
+
+    void getresurantRating(float resturantRating) {
         this.resturantRating = resturantRating;
+
+    }
+
+    void gettotalItem(int totalItem) {
         this.totalItem = totalItem;
+
     }
 
     String[] setData() {
@@ -51,13 +65,13 @@ class resturant {
                 }
                 break;
             default:
-            System.out.println("Invalid Press");
-            break;
+                System.out.println("Invalid Press");
+                break;
         }
     }
 
-    float calAvgerage(){
-        float calculate=resturantRating/totalItem;
+    float calAvgerage() {
+        float calculate = resturantRating / totalItem;
         return calculate;
     }
 }
