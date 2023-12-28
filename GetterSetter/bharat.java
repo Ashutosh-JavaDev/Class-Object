@@ -16,4 +16,17 @@ class bharat {
             HotelName[i] = sc.nextLine();
         }
     }
+
+    void getHotel() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Insert How Many Flight Name You want to Insert in Your app");
+        int FlightNumber = sc.nextInt();
+        sc.nextLine();
+        String FlightName[] = new String[FlightNumber];
+        System.out.println("Insert name of the Hotel");
+        for (int i = 0; i < FlightNumber; i++) {
+            FlightName[i] = sc.nextLine();
+        }
+    }
+    
 }
