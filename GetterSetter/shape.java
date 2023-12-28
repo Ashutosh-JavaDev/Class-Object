@@ -12,13 +12,13 @@ class shape {
             this.breadth = breadth;
         }
 
-        float putLength() {
-            return length;
-        }
+        // float putLength() {
+        //     return length;
+        // }
 
-        float PutBreadth() {
-            return breadth;
-        }
+        // float PutBreadth() {
+        //     return breadth;
+        // }
 
         void disp() {
             area = length * breadth;
