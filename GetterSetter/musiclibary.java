@@ -8,13 +8,14 @@ class musiclibary {
     String[] setSong(){
         return SongCollection;
     }
-    void Randomsong(){
-        Random song=new Random();
-        for(int i=0;i<SongCollection.length;i++){
-            SongCollection[i]=song.nextString(100);
+    void randomSong() {
+        Random random = new Random();
+        for (int i = 0; i < SongCollection.length; i++) {
+            // Use nextInt to generate a random integer; nextString does not exist
+            SongCollection[i] = String.valueOf(random.nextInt(100));
         }
-        System.out.println("Palyed Song:");
-        for(String value:SongCollection){
+        System.out.println("Played Song:");
+        for (String value : SongCollection) {
             System.out.println(value);
         }
     }
@@ -38,6 +39,7 @@ class musiclibary {
             for(int i=0;i<SongCollection.length;i++){
                 System.out.println(SongCollection[i]);
             }
+            break;
         }
     }
 }
