@@ -47,7 +47,7 @@ class bharat {
 
     void FlightBook() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Name of Hotel You Want to Book");
+        System.out.println("Enter the Name of Flight You Want to Book");
         String FliName = sc.nextLine();
         for (int i = 0; i < FlightName.length; i++) {
             if (FlightName[i].equalsIgnoreCase(FliName)) {
@@ -60,26 +60,26 @@ class bharat {
 
     void HotelCancel() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Name of Hotel You Want to Book");
+        System.out.println("Enter the Name of Hotel You Want to Cancel");
         String Hotname = sc.nextLine();
         for (int i = 0; i < HotelName.length; i++) {
             if (HotelName[i].equalsIgnoreCase(Hotname)) {
-                System.out.println("Hotel Booked");
+                System.out.println("Hotel Cancel");
             } else {
                 System.out.println("Hotel  Not Available");
             }
         }
     }
 
-    void Hotelbook() {
+    void FlightCancel() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Name of Hotel You Want to Book");
+        System.out.println("Enter the Name of Flight You Want to Flight");
         String Hotname = sc.nextLine();
-        for (int i = 0; i < HotelName.length; i++) {
+        for (int i = 0; i < FlightName.length; i++) {
             if (HotelName[i].equalsIgnoreCase(Hotname)) {
-                System.out.println("Hotel Booked");
+                System.out.println("Flight Cancel");
             } else {
-                System.out.println("Hotel  Not Available");
+                System.out.println("Flight  Not Available");
             }
         }
     }
