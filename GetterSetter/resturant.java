@@ -39,6 +39,18 @@ class resturant {
                     System.out.println(newItemName[i]);
                 }
                 break;
-        }
+                case 2:
+                System.out.println("Which Item you want to remove?");
+                String removename=sc.nextLine();
+                for(int i=0;i<Menuname.length;i++){
+                    if(Menuname[i].equalsIgnoreCase(removename)){
+                        Menuname[i]="Item Sucessfully Removed";
+                    }
+                    else{
+                        System.out.println("Item Not Present in Menu");
+                    }
+                }
+                    break;
+                    default:
     }
 }
