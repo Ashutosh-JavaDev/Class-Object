@@ -4,20 +4,30 @@ import java.util.Scanner;
 
 class inventory {
     String HighInventory[], LowInventory[];
-    void geyHighInventory(String HighInventory[]) {
-        this.HighInventory = HighInventory;
+
+    void getHighInventory() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How Many Product You want to Insert in High Inventory");
+        int num = sc.nextInt();
+        sc.nextLine();
+        HighInventory = new String[num];
+        System.out.println("Enter the Name of the Product");
+        for (int i = 0; i < num; i++) {
+            HighInventory[i] = sc.nextLine();
+        }
     }
 
-    String[] setHighInventory() {
-        return HighInventory;
-    }
+    void getLowInventory() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How Many Product You want to Insert in Low Inventory");
+        int num = sc.nextInt();
+        sc.nextLine();
 
-    void getLowInventory(String LowInventory[]) {
-        this.LowInventory = LowInventory;
-    }
-
-    String[] setLowInventory() {
-        return LowInventory;
+        LowInventory = new String[num];
+        System.out.println("Enter the Name of the Product");
+        for (int i = 0; i < num; i++) {
+            LowInventory[i] = sc.nextLine();
+        }
     }
 
     void dispHighInventory() {
@@ -28,6 +38,7 @@ class inventory {
             case 1:
                 System.out.println("How Many Product You Want to Add in High Inventory");
                 int num = sc.nextInt();
+                sc.nextLine();
                 String HighInventor[] = new String[num];
                 System.out.println("Enter the Name of Product");
                 for (int i = 0; i < num; i++) {
@@ -42,31 +53,34 @@ class inventory {
                 }
                 break;
             case 2:
-            System.out.println("Which Product You Want to Delete");
-            String Removename=sc.nextLine();
-            for(int i=0;i<HighInventory.length;i++){
-                if(HighInventory[i].equalsIgnoreCase(Removename)){
-                    HighInventory[i]="Product Remove";
+                System.out.println("Which Product You Want to Delete");
+                String Removename = sc.nextLine();
+                for (int i = 0; i < HighInventory.length; i++) {
+                    if (HighInventory[i].equalsIgnoreCase(Removename)) {
+                        HighInventory[i] = "Product Remove";
+                    } else {
+                        System.out.println("Product Not Available in Inventory");
+                    }
                 }
-                else{
-                    System.out.println("Product Not Available in Inventory");
-                }
-            }
-            break;
+                break;
             default:
-            System.out.println("Invalid Press");
+                System.out.println("Invalid Press");
         }
     }
-    void compareInventory(){
-        for(int i=0;i<HighInventory.length;i++){
-            for(int j=0;j<LowInventory.length;j++){
-                if(HighInventory[i].equalsIgnoreCase(LowInventory[i])){
-                    System.out.println("Product in High and Low Inventory are Equal");
-                }
-                else{
-                    System.out.println("Product Are Not Same in Both Inventory");
+
+    void compareInventory() {
+        int hi = 0, lo = 0;
+        for (int i = 0; i < HighInventory.length; i++) {
+            for (int j = i + 1; j < LowInventory.length; j++) {
+                if (HighInventory[i].equalsIgnoreCase(LowInventory[i])) {
+                    hi++;
                 }
             }
+        }
+        if (hi > 0) {
+            System.out.println("Product in High and Low Inventory are Equal");
+        } else {
+            System.out.println("Product Are Not Same in Both Inventory");
         }
     }
 }
