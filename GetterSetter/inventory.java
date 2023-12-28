@@ -44,6 +44,19 @@ class inventory {
                 }
                 break;
             case 2:
+            System.out.println("Which Product You Want to Delete");
+            String Removename=sc.nextLine();
+            for(int i=0;i<HighInventory.length;i++){
+                if(HighInventory[i].equalsIgnoreCase(Removename)){
+                    HighInventory[i]="Product Remove";
+                }
+                else{
+                    System.out.println("Product Not Available in Inventory");
+                }
+            }
+            break;
+            default:
+            System.out.println("Invalid Press");
         }
     }
 }
