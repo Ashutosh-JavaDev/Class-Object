@@ -1,27 +1,41 @@
 package GetterSetter;
+
 import java.util.Scanner;
+
 class inventory {
-    String HighInventory[],LowInventory[];
+    String HighInventory[], LowInventory[];
     int Press;
-    void geyHighInventory(String HighInventory[]){
-        this.HighInventory=HighInventory;
+
+    void geyHighInventory(String HighInventory[]) {
+        this.HighInventory = HighInventory;
     }
-    String[] setHighInventory(){
+
+    String[] setHighInventory() {
         return HighInventory;
     }
-    void getLowInventory(String LowInventory[]){
-        this.LowInventory=LowInventory;
+
+    void getLowInventory(String LowInventory[]) {
+        this.LowInventory = LowInventory;
     }
-    String[] setLowInventory(){
+
+    String[] setLowInventory() {
         return LowInventory;
     }
-    void disp(){
-        Scanner sc=new Scanner(System.in);
+
+    void dispLowInventory() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How Many Product You Want to Add in low Inventory");
+        int num = sc.nextInt();
+    }
+
+    void dispHighInventory() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Press1.to Add Product\nPress2.to Remove Product");
-        int press=sc.nextInt();
-        switch(press){
+        int press = sc.nextInt();
+        switch (press) {
             case 1:
-            
+                System.out.println("How Many Product You Want to Add in High Inventory");
+                int num = sc.nextInt();
         }
     }
 }
