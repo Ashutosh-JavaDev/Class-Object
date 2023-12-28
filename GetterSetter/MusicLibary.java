@@ -17,6 +17,7 @@ public class MusicLibary {
         for(int i=0;i<Number;i++){
             System.out.println(str[i]);
         }
-        
+        ob.randomSong();
+        ob.disp();
     }
 }
