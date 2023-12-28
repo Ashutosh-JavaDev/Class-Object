@@ -10,11 +10,11 @@ class bharat {
         System.out.println("Insert How Many Hotels You want to Insert in Your app");
         int HotelNumber = sc.nextInt();
         sc.nextLine();
-        String HotelName[] = new String[HotelNumber];
-        this.HotelName = HotelName;
+        String hotelName[] = new String[HotelNumber];
+        this.HotelName = hotelName;
         System.out.println("Insert name of the Hotel");
         for (int i = 0; i < HotelNumber; i++) {
-            HotelName[i] = sc.nextLine();
+            hotelName[i] = sc.nextLine();
         }
     }
 
@@ -23,12 +23,12 @@ class bharat {
         System.out.println("Insert How Many Flight Name You want to Insert in Your app");
         int FlightNumber = sc.nextInt();
         sc.nextLine();
-        String FlightName[] = new String[FlightNumber];
-        this.FlightName = FlightName;
+        String flightName[] = new String[FlightNumber];
+        this.FlightName = flightName;
 
         System.out.println("Insert name of the Hotel");
         for (int i = 0; i < FlightNumber; i++) {
-            FlightName[i] = sc.nextLine();
+            flightName[i] = sc.nextLine();
         }
     }
 
@@ -74,9 +74,9 @@ class bharat {
     void FlightCancel() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Name of Flight You Want to Flight");
-        String Hotname = sc.nextLine();
+        String FlihtName = sc.nextLine();
         for (int i = 0; i < FlightName.length; i++) {
-            if (HotelName[i].equalsIgnoreCase(Hotname)) {
+            if (FlightName[i].equalsIgnoreCase(FlihtName)) {
                 System.out.println("Flight Cancel");
             } else {
                 System.out.println("Flight  Not Available");
