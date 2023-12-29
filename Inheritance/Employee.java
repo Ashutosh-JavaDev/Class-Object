@@ -46,9 +46,11 @@ class HrManager extends employee {
         }
         System.out.println("Old Employee Work Degination:       " + setWork());
         System.out.println("Old Employee Salary:       " + setSalary());
-
+        System.out.println("_________________________________________________");
+        System.out.println("New Employee Data");
         for (int i = 0; i < number; i++) {
-
+            System.out.println("New Employee Work Degination:       " + newEmployee[i]);
+            System.out.println("New Employeee Salary:           " + newEmployeeSalary[i]);
         }
     }
 }
