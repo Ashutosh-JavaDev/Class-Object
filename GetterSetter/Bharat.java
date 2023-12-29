@@ -4,9 +4,7 @@ public class Bharat {
         bharat ob=new bharat();
         ob.getFlight();;
         ob.getHotel();
-        ob.Hotelbook();
-        ob.FlightBook();
-        ob.HotelCancel();
-        ob.FlightCancel();
+        ob.detailFlight();
+        ob.detailHotel();
     }
 }
