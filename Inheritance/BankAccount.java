@@ -43,6 +43,8 @@ public class BankAccount {
         savingAccount ob=new savingAccount();
         System.out.println("Add Money in Your Account");
         ob.getDepo(sc.nextFloat());
+        System.out.println("WithDraw Amount");
+        ob.getWithdraw(sc.nextFloat());
         ob.takeWithdraw();
     }
 }
