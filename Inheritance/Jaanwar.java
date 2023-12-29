@@ -5,14 +5,13 @@ class jaanwar{
     }
 }
 class Cheetah extends jaanwar{
-    void run(){
-        move();
+    void move(){
         System.out.println("Cheetah Run");
     }
 }
 public class Jaanwar {
     public static void main(String[] args) {
         Cheetah ob=new Cheetah(); 
-        ob.run();
+        ob.move();
     }
 }
