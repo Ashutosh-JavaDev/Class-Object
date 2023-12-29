@@ -23,7 +23,7 @@ class bharat {
         int FlightNumber = sc.nextInt();
         sc.nextLine();
         FlightName = new String[FlightNumber];
-        System.out.println("Insert name of the Hotel");
+        System.out.println("Insert name of the Flight");
         for (int i = 0; i < FlightNumber; i++) {
             FlightName[i] = sc.nextLine();
         }
@@ -38,15 +38,16 @@ class bharat {
             case 1:
                 System.out.println("Insert Hotel Name Want to Book");
                 String nameHotel = sc.nextLine();
+                boolean bookHotel = false;
                 for (int i = 0; i < HotelName.length; i++) {
                     if (HotelName[i].equalsIgnoreCase(nameHotel)) {
                         System.out.println("Hotel Book");
+                        bookHotel = true;
                         break;
 
-                    } else {
+                    }
+                    if (!bookHotel) {
                         System.out.println("Hotel Not Available");
-                        break;
-
                     }
                 }
                 break;
@@ -54,15 +55,16 @@ class bharat {
             case 2:
                 System.out.println("Insert Hotel Name Want to Cancel");
                 String cancelHotel = sc.nextLine();
+                boolean CanHotel = false;
+
                 for (int i = 0; i < HotelName.length; i++) {
                     if (HotelName[i].equalsIgnoreCase(cancelHotel)) {
                         System.out.println("Hotel Cancel");
+                        CanHotel=true;
                         break;
 
-                    } else {
+                    } if(!CanHotel) {
                         System.out.println("Hotel Not Booked Yet");
-                        break;
-
                     }
                 }
                 break;
@@ -82,14 +84,14 @@ class bharat {
             case 1:
                 System.out.println("Insert Flight Name Want to Book");
                 String nameFlight = sc.nextLine();
+                boolean bookFlight=false;
                 for (int i = 0; i < FlightName.length; i++) {
                     if (FlightName[i].equalsIgnoreCase(nameFlight)) {
                         System.out.println("Flight Book");
+                        bookFlight=true;
                         break;
-                    } else {
-                        System.out.println("Flight Not Available");
-                        break;
-
+                    } if(!bookFlight) {
+                        System.out.println("Flight Not Available");            
                     }
                 }
                 break;
@@ -97,15 +99,15 @@ class bharat {
             case 2:
                 System.out.println("Insert Flight Name Want to Cancel");
                 String cancelFlight = sc.nextLine();
+                boolean flightCanceled = false;
                 for (int i = 0; i < FlightName.length; i++) {
                     if (FlightName[i].equalsIgnoreCase(cancelFlight)) {
                         System.out.println("Flight Cancel");
+                        flightCanceled = true;
                         break;
 
-                    } else {
+                    } if(!flightCanceled) {
                         System.out.println("Flight Not Booked Yet");
-                        break;
-
                     }
                 }
                 break;
