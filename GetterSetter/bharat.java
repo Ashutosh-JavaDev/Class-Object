@@ -29,10 +29,35 @@ class bharat {
         }
     }
 
-    void detailHotel(){
-        Scanner sc=new Scanner(System.in);
+    void detailHotel() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Press1. to Book Hotel\nPress 2. to Cancel Hotel");
-        int press=sc.nextInt();
-        
+        int press = sc.nextInt();
+        switch (press) {
+            case 1:
+                System.out.println("Insert Hotel Name Want to Book");
+                String nameHotel = sc.nextLine();
+                for (int i = 0; i < HotelName.length; i++) {
+                    if (HotelName[i].equalsIgnoreCase(nameHotel)) {
+                        System.out.println("Hotel Book");
+                    } else {
+                        System.out.println("Hotel Not Available");
+                    }
+                }
+                break;
+
+            case 2:
+                System.out.println("Insert Hotel Name Want to Cancel");
+                String cancelHotel = sc.nextLine();
+                for (int i = 0; i < HotelName.length; i++) {
+                    if (HotelName[i].equalsIgnoreCase(cancelHotel)) {
+                        System.out.println("Hotel Cancel");
+                    } else {
+                        System.out.println("Hotel Not Booked Yet");
+                    }
+                }
+                break;
+
+        }
     }
 }
