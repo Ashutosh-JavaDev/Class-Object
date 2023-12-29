@@ -20,7 +20,6 @@ class savingAccount extends bankaccount{
         Scanner sc=new Scanner(System.in);
         getDepo(deposite);
         System.out.println("Current Bal:    "+setDepo());
-        System.out.println("Enter Withdraw Amount");
         getWithdraw(withdraw);
         if(withdraw<=deposite){
             System.out.println("Amount Withdrawn");

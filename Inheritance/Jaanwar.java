@@ -1,5 +1,4 @@
 package Inheritance;
-import java.util.*;
 class jaanwar{
     void move(){
         System.out.println("Cheetah Move");
@@ -12,5 +11,8 @@ class Cheetah extends jaanwar{
     }
 }
 public class Jaanwar {
-    
+    public static void main(String[] args) {
+        Cheetah ob=new Cheetah(); 
+        ob.run();
+    }
 }
