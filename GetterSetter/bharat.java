@@ -33,6 +33,7 @@ class bharat {
         Scanner sc = new Scanner(System.in);
         System.out.println("Press1. to Book Hotel\nPress 2. to Cancel Hotel");
         int press = sc.nextInt();
+        sc.nextLine();
         switch (press) {
             case 1:
                 System.out.println("Insert Hotel Name Want to Book");
@@ -40,8 +41,12 @@ class bharat {
                 for (int i = 0; i < HotelName.length; i++) {
                     if (HotelName[i].equalsIgnoreCase(nameHotel)) {
                         System.out.println("Hotel Book");
+                        break;
+
                     } else {
                         System.out.println("Hotel Not Available");
+                        break;
+
                     }
                 }
                 break;
@@ -52,8 +57,12 @@ class bharat {
                 for (int i = 0; i < HotelName.length; i++) {
                     if (HotelName[i].equalsIgnoreCase(cancelHotel)) {
                         System.out.println("Hotel Cancel");
+                        break;
+
                     } else {
                         System.out.println("Hotel Not Booked Yet");
+                        break;
+
                     }
                 }
                 break;
@@ -68,15 +77,19 @@ class bharat {
         Scanner sc = new Scanner(System.in);
         System.out.println("Press1. to Book Flight\nPress 2. to Cancel Flight");
         int press = sc.nextInt();
+        sc.nextLine();
         switch (press) {
             case 1:
-                System.out.println("Insert HotFlight Name Want to Book");
+                System.out.println("Insert Flight Name Want to Book");
                 String nameFlight = sc.nextLine();
                 for (int i = 0; i < FlightName.length; i++) {
                     if (FlightName[i].equalsIgnoreCase(nameFlight)) {
                         System.out.println("Flight Book");
+                        break;
                     } else {
                         System.out.println("Flight Not Available");
+                        break;
+
                     }
                 }
                 break;
@@ -87,8 +100,12 @@ class bharat {
                 for (int i = 0; i < FlightName.length; i++) {
                     if (FlightName[i].equalsIgnoreCase(cancelFlight)) {
                         System.out.println("Flight Cancel");
+                        break;
+
                     } else {
                         System.out.println("Flight Not Booked Yet");
+                        break;
+
                     }
                 }
                 break;
