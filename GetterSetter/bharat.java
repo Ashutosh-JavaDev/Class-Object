@@ -10,11 +10,10 @@ class bharat {
         System.out.println("Insert How Many Hotels You want to Insert in Your app");
         int HotelNumber = sc.nextInt();
         sc.nextLine();
-        String hotelName[] = new String[HotelNumber];
-        this.HotelName = hotelName;
+        HotelName = new String[HotelNumber];
         System.out.println("Insert name of the Hotel");
         for (int i = 0; i < HotelNumber; i++) {
-            hotelName[i] = sc.nextLine();
+            HotelName[i] = sc.nextLine();
         }
     }
 
@@ -23,12 +22,10 @@ class bharat {
         System.out.println("Insert How Many Flight Name You want to Insert in Your app");
         int FlightNumber = sc.nextInt();
         sc.nextLine();
-        String flightName[] = new String[FlightNumber];
-        this.FlightName = flightName;
-
+        FlightName = new String[FlightNumber];
         System.out.println("Insert name of the Hotel");
         for (int i = 0; i < FlightNumber; i++) {
-            flightName[i] = sc.nextLine();
+            FlightName[i] = sc.nextLine();
         }
     }
 
