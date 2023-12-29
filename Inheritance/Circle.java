@@ -14,7 +14,7 @@ class circle {
 }
 
 class shape extends circle {
-    double Radius;
+    double Radius, Circumfrence, Area;
 
     void getRadius(double Radius) {
         this.Radius = Radius;
@@ -26,7 +26,20 @@ class shape extends circle {
 
     @Override
     void getPerimeter() {
+        Circumfrence = 2 * 3.14 * Radius;
+    }
 
+    double setPerimeter() {
+        return Circumfrence;
+    }
+
+    @Override
+    void getArea() {
+        Area = 3.14 * Radius * Radius;
+    }
+
+    double setArea() {
+        return Area;
     }
 }
 
