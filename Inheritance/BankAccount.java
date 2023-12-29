@@ -18,19 +18,31 @@ class  bankaccount{
 class savingAccount extends bankaccount{
     void takeWithdraw(){
         Scanner sc=new Scanner(System.in);
-        getWithdraw(withdraw);
         getDepo(deposite);
+        System.out.println("Current Bal:    "+setDepo());
         System.out.println("Enter Withdraw Amount");
-        float withAmount=sc.nextFloat();
-        if(withAmount<=deposite){
+        getWithdraw(withdraw);
+        if(withdraw<=deposite){
             System.out.println("Amount Withdrawn");
         }
         else{
             System.out.println("Insufficent Balance");
         }
-        float TotalBalance=deposite-withAmount;
+        float TotalBalance=deposite-withdraw;
+        if(TotalBalance<100){
+            System.out.println("Minimum Balance Hit");
+        }
+        else{
+            System.out.println("Total Bal:  "+TotalBalance);
+        }
     }
 }
 public class BankAccount {
-    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        savingAccount ob=new savingAccount();
+        System.out.println("Add Money in Your Account");
+        ob.getDepo(sc.nextFloat());
+        ob.takeWithdraw();
+    }
 }
