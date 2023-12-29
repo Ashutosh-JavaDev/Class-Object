@@ -1,22 +1,29 @@
 package Inheritance;
+
 import java.util.Scanner;
-class animal{
+
+class animal {
     String sound;
-    void makeSound(){
-        sound="Meow";
+
+    void makeSound() {
+        sound = "Meow";
     }
-    String putSound(){
+
+    String putSound() {
         return sound;
     }
 }
-class cat extends animal{
-    void Voice(){
-        System.out.println("Cat:    "+putSound());
+
+class cat extends animal {
+    void Voice() {
+        makeSound();
+        System.out.println("Cat:    " + putSound());
     }
 }
+
 public class Animal {
     public static void main(String[] args) {
-        cat ob=new cat();
+        cat ob = new cat();
         ob.Voice();
     }
 }
