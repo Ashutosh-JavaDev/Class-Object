@@ -34,7 +34,7 @@ class vehicle {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert How Much Distance Travel\nNote:insert only number");
         float distance = sc.nextFloat();
-        System.out.println("Fuel Consumed while travelling?");
+        System.out.println("Fuel Consumed while travelling?\nValue in liter");
         float fuel = sc.nextFloat();
         float calculate = distance / fuel;
         return calculate;
@@ -44,7 +44,7 @@ class vehicle {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert Minimum Speed of Your Travelling");
         float speed = sc.nextFloat();
-        System.out.println("Insert Time Taken while Travelling\nformat 'HH.MM'");
+        System.out.println("Insert Time Taken while Travelling\nFormat 'HH.MM'");
         double time = sc.nextDouble();
         double calculateDistance = speed * time;
         return calculateDistance;
@@ -67,6 +67,7 @@ class truck extends vehicle {
         System.out.println("Truck Name: " + setModelName());
         System.out.println("Fuel Type:  " + setFuelType());
         System.out.println("Manufacture:    " + setYear());
+        System.out.println("--------------------------------------------------------------");
         float milage = calFuel();
         System.out.println("Milage: " + milage);
         double travelDistance = distancetravel();
@@ -87,6 +88,7 @@ class car extends vehicle {
         System.out.println("car Name: " + setModelName());
         System.out.println("Fuel Type:  " + setFuelType());
         System.out.println("Manufacture:    " + setYear());
+        System.out.println("--------------------------------------------------------------");
         float milage = calFuel();
         System.out.println("Milage: " + milage);
         double travelDistance = distancetravel();
@@ -107,6 +109,7 @@ class bike extends vehicle {
         System.out.println("Bike Name: " + setModelName());
         System.out.println("Fuel Type:  " + setFuelType());
         System.out.println("Manufacture:    " + setYear());
+        System.out.println("--------------------------------------------------------------");
         float milage = calFuel();
         System.out.println("Milage: " + milage);
         double travelDistance = distancetravel();
