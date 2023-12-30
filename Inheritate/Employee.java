@@ -6,7 +6,7 @@ class employee {
     String name[], Address[], Jobtitle[];
     int Salary;
 
-    void getDetail() {
+    void getDetail(String name[], String Address[], String Jobtitle[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert Number of Employee detail Want to add in Data");
         int Number = sc.nextInt();
@@ -23,7 +23,25 @@ class employee {
             Address[i] = sc.nextLine();
             System.out.println("Job Degination");
             Jobtitle[i] = sc.nextLine();
+            System.out.println("--------------------------------------------------");
         }
+        for(int i=0;i<Number;i++){
+            System.out.println("__________________________________________________");
+            System.out.println("Name:               "+name[i]);
+            System.out.println("Address:            "+Address[i]);
+            System.out.println("Degination:         "+Jobtitle[i]);
+            System.out.println("__________________________________________________");
+        }
+    }
+
+    String[] setname() {
+        return name;
+    }
+    String[] setAddress(){
+        return Address;
+    }
+    String[] setJobTitle(){
+        return Jobtitle;
     }
 
     void GetSalary(int Salary) {
@@ -35,12 +53,26 @@ class employee {
     }
 
     float CalBonus() {
-        float bonus = Salary*8.33f/100;
+        float bonus = Salary * 8.33f / 100;
         return bonus;
 
     }
 }
 
-public class Employee {
+class Programmer extends employee {
+    void getProgrammer() {
+        getDetail(name, Address, Jobtitle);
+    }
+}
+class Developer extends employee{
+    void getDeveloper(){
+        getDetail(name, Address, Jobtitle);
+    }
+}
 
+public class Employee {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+    }
 }
