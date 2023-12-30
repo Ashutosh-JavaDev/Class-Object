@@ -34,7 +34,9 @@ class Employee extends Person {
         return employeeId;
     }
 
-    public void setJobTitle(String jobTitle) {
+    // Override getLastName to include job title
+    @Override
+    public void setLastName(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
@@ -63,7 +65,7 @@ public class Main {
         scanner.nextLine(); // Consume the newline character left in the buffer
 
         System.out.println("Enter Job Title:");
-        employee.setJobTitle(scanner.nextLine());
+        employee.setLastName(scanner.nextLine());
 
         // Display information
         System.out.println("\nEmployee Information:");

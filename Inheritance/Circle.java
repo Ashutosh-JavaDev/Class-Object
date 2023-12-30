@@ -2,47 +2,35 @@ package Inheritance;
 
 import java.util.Scanner;
 
-class circle {
-    double Radius;
+class Shape {
+    double radius; // Use lowercase for variable names
 
-    void getPerimeter() {
+    void setRadius(double radius) {
+        this.radius = radius;
     }
 
-    void getArea() {
-
-    }
-}
-
-class shape extends circle {
-    double Radius, Circumfrence, Area;
-
-    void getRadius(double Radius) {
-        this.Radius = Radius;
+    double getRadius() {
+        return radius;
     }
 
-    double setRadius() {
-        return Radius;
+    double getPerimeter() {
+        return 2 * Math.PI * radius; // Use Math.PI for a more accurate value of pi
     }
 
-    @Override
-    void getPerimeter() {
-        Circumfrence = 2 * 3.14 * Radius;
-    }
-
-    double setPerimeter() {
-        return Circumfrence;
-    }
-
-    @Override
-    void getArea() {
-        Area = 3.14 * Radius * Radius;
-    }
-
-    double setArea() {
-        return Area;
+    double getArea() {
+        return Math.PI * radius * radius;
     }
 }
 
-public class Circle {
+public class Circle extends Shape { // Renamed the class to follow Java conventions
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Shape ob = new Shape();
 
+        System.out.println("Enter radius of Circle");
+        ob.setRadius(sc.nextDouble());
+
+        System.out.println("Circumference of Circle: " + ob.getPerimeter());
+        System.out.println("Area of Circle: " + ob.getArea());
+    }
 }
