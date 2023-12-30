@@ -39,7 +39,7 @@ class vehicle {
         System.out.println("Insert Minimum Speed of Your Travelling");
         float speed = sc.nextFloat();
         System.out.println("Insert Time Taken while Travelling\nformat 'HH.MM'");
-        float time = sc.nextFloat();
+        double time = sc.nextDouble();
         double calculateDistance = speed * time;
         return calculateDistance;
     }
@@ -47,7 +47,7 @@ class vehicle {
     double maxSpeed() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert Time Taken while Travelling\nformat 'HH.MM'");
-        float time = sc.nextFloat();
+        double time = sc.nextDouble();
         double vmax = 2 * Math.PI / time;
         return vmax;
     }
@@ -112,6 +112,7 @@ public class Vehicle {
         truck Truck = new truck();
         System.out.println("Pass Truck information");
         System.out.println("Model Name:");
+        sc.nextLine();
         Truck.getInput(sc.nextLine(), null, 0);
         System.out.println("Fuel Type");
         Truck.getInput(null, sc.nextLine(), 0);
@@ -123,6 +124,8 @@ public class Vehicle {
         car Car = new car();
         System.out.println("Pass Car information");
         System.out.println("Model Name:");
+        sc.nextLine();
+
         Car.getInput(sc.nextLine(), null, 0);
         System.out.println("Fuel Type");
         Car.getInput(null, sc.nextLine(), 0);
@@ -134,6 +137,8 @@ public class Vehicle {
         bike Bike = new bike();
         System.out.println("Pass Bike information");
         System.out.println("Model Name:");
+        sc.nextLine();
+
         Bike.getInput(sc.nextLine(), null, 0);
         System.out.println("Fuel Type");
         Bike.getInput(null, sc.nextLine(), 0);
