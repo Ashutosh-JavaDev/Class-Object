@@ -33,6 +33,7 @@ class employee {
             sc.nextLine();
             System.out.println("--------------------------------------------------");
         }
+        dispDetail();
     }
 
     void dispDetail() {
