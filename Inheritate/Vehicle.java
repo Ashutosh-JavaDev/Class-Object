@@ -65,6 +65,8 @@ class truck extends vehicle {
         System.out.println("Distance:   " + travelDistance);
         double speedMax = maxSpeed();
         System.out.println("Speed per/Kilometer:    " + speedMax);
+        System.out.println("--------------------------------------------------------------");
+
     }
 }
 
@@ -81,6 +83,8 @@ class car extends vehicle {
         System.out.println("Distance:   " + travelDistance);
         double speedMax = maxSpeed();
         System.out.println("Speed per/Kilometer:    " + speedMax);
+        System.out.println("--------------------------------------------------------------");
+
     }
 }
 
@@ -97,6 +101,8 @@ class bike extends vehicle {
         System.out.println("Distance:   " + travelDistance);
         double speedMax = maxSpeed();
         System.out.println("Speed per/Kilometer:    " + speedMax);
+        System.out.println("--------------------------------------------------------------");
+
     }
 }
 
@@ -111,6 +117,7 @@ public class Vehicle {
         Truck.getInput(null, sc.nextLine(), 0);
         System.out.println("Manufacture Year:");
         Truck.getInput(null, null, sc.nextInt());
+        System.out.println("--------------------------------------------------------------");
         Truck.getTruckValue();
         // Car
         car Car = new car();
@@ -121,6 +128,7 @@ public class Vehicle {
         Car.getInput(null, sc.nextLine(), 0);
         System.out.println("Manufacture Year:");
         Car.getInput(null, null, sc.nextInt());
+        System.out.println("--------------------------------------------------------------");
         Car.getCarValue();
         // Bike
         bike Bike = new bike();
@@ -131,6 +139,7 @@ public class Vehicle {
         Bike.getInput(null, sc.nextLine(), 0);
         System.out.println("Manufacture Year:");
         Bike.getInput(null, null, sc.nextInt());
+        System.out.println("--------------------------------------------------------------");
         Bike.getBikeValue();
     }
 }
