@@ -83,6 +83,9 @@ public class Employee {
         Scanner sc=new Scanner(System.in);
         Programmer ob1=new Programmer();
         Developer ob2=new Developer();
-        System.out.println("")
+        System.out.println("Enter Programmer Detail");
+        ob1.getProgrammer();
+        System.out.println("Enter Developer Detail");
+        ob2.getDeveloper();
     }
 }
