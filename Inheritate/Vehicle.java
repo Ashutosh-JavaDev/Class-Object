@@ -6,9 +6,15 @@ class vehicle {
     String Modelname, FuelType;
     int Year;
 
-    void getInput(String Modelname, String FuelType, int Year) {
+    void getModelName(String Modelname) {
         this.Modelname = Modelname;
+    }
+
+    void getFuelType(String FuelType) {
         this.FuelType = FuelType;
+    }
+
+    void getYear(int Year) {
         this.Year = Year;
     }
 
@@ -55,7 +61,9 @@ class vehicle {
 
 class truck extends vehicle {
     void getTruckValue() {
-        getInput(Modelname, FuelType, Year);
+        getModelName(Modelname);
+        getFuelType(FuelType);
+        getYear(Year);
         System.out.println("Truck Name: " + setModelName());
         System.out.println("Fuel Type:  " + setFuelType());
         System.out.println("Manufacture:    " + setYear());
@@ -73,7 +81,9 @@ class truck extends vehicle {
 // Car
 class car extends vehicle {
     void getCarValue() {
-        getInput(Modelname, FuelType, Year);
+        getModelName(Modelname);
+        getFuelType(FuelType);
+        getYear(Year);
         System.out.println("car Name: " + setModelName());
         System.out.println("Fuel Type:  " + setFuelType());
         System.out.println("Manufacture:    " + setYear());
@@ -91,7 +101,9 @@ class car extends vehicle {
 // Bike
 class bike extends vehicle {
     void getBikeValue() {
-        getInput(Modelname, FuelType, Year);
+        getModelName(Modelname);
+        getFuelType(FuelType);
+        getYear(Year);
         System.out.println("Bike Name: " + setModelName());
         System.out.println("Fuel Type:  " + setFuelType());
         System.out.println("Manufacture:    " + setYear());
@@ -112,38 +124,40 @@ public class Vehicle {
         truck Truck = new truck();
         System.out.println("Pass Truck information");
         System.out.println("Model Name:");
-        sc.nextLine();
-        Truck.getInput(sc.nextLine(), null, 0);
+        Truck.getModelName(sc.nextLine());
         System.out.println("Fuel Type");
-        Truck.getInput(null, sc.nextLine(), 0);
+        Truck.getFuelType(sc.nextLine());
         System.out.println("Manufacture Year:");
-        Truck.getInput(null, null, sc.nextInt());
+        Truck.getYear(sc.nextInt());
+        sc.nextLine();
         System.out.println("--------------------------------------------------------------");
         Truck.getTruckValue();
         // Car
         car Car = new car();
         System.out.println("Pass Car information");
         System.out.println("Model Name:");
-        sc.nextLine();
+        Car.getModelName(sc.nextLine());
 
-        Car.getInput(sc.nextLine(), null, 0);
         System.out.println("Fuel Type");
-        Car.getInput(null, sc.nextLine(), 0);
+        Car.getFuelType(sc.nextLine());
+
         System.out.println("Manufacture Year:");
-        Car.getInput(null, null, sc.nextInt());
+        Car.getYear(sc.nextInt());
+
+        sc.nextLine();
         System.out.println("--------------------------------------------------------------");
         Car.getCarValue();
         // Bike
         bike Bike = new bike();
         System.out.println("Pass Bike information");
         System.out.println("Model Name:");
-        sc.nextLine();
-
-        Bike.getInput(sc.nextLine(), null, 0);
+        Bike.getModelName(sc.nextLine());
         System.out.println("Fuel Type");
-        Bike.getInput(null, sc.nextLine(), 0);
+        Bike.getFuelType(sc.nextLine());
         System.out.println("Manufacture Year:");
-        Bike.getInput(null, null, sc.nextInt());
+        Bike.getYear(sc.nextInt());
+
+        sc.nextLine();
         System.out.println("--------------------------------------------------------------");
         Bike.getBikeValue();
     }
