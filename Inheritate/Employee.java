@@ -47,19 +47,7 @@ class employee {
             System.out.println("__________________________________________________");
         }
     }
-
-    String[] setname() {
-        return name;
-    }
-
-    String[] setAddress() {
-        return Address;
-    }
-
-    String[] setJobTitle() {
-        return Jobtitle;
-    }
-
+    
     float CalBonus(int Salary) {
         float bonus = Salary * 8.33f / 100;
         return bonus;
