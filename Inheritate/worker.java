@@ -67,7 +67,7 @@ class Developer extends employee {
     }
 }
 
-public class Employee {
+public class worker {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         Programmer ob1=new Programmer();

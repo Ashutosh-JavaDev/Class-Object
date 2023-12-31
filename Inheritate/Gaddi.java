@@ -121,7 +121,7 @@ class bike extends vehicle {
     }
 }
 
-public class Vehicle {
+public class Gaddi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         truck Truck = new truck();
