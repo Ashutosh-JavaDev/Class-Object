@@ -1,4 +1,4 @@
-package Inheritate;
+package Inheritances;
 class vehicle{
     void engine(){
         System.out.println("Vehicle Start");
