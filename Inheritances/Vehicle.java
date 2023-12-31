@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritances;
 class  vehicle{
     String Drive(){
         String status="Reparing a Car";
