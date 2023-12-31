@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritances;
 class jaanwar{
     void move(){
         System.out.println("Cheetah Move");

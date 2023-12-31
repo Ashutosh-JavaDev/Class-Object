@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritances;
 import java.util.*;
 class  bankaccount{
     float deposite,withdraw;
