@@ -1,20 +1,26 @@
 package recursion;
+
 import java.util.Scanner;
-class count{
-    int count(int num,int c){
-        if(num<10){
+
+class count {
+    int count(int num) {
+        if (num < 10) {
             return num;
-        }
-        else{
-            int d=num%10;
-            return count(num/10, c+1);
+        } else {
+            int c = 0;
+            int d = num % 10;
+            c++;
+            count(num / 10);
+            return c;
+
         }
     }
 }
+
 public class CountDigit {
     public static void main(String[] args) {
-        count Ram=new count();
-       int result= Ram.count(12345, 0);
-       System.out.println("Answer:  "+result);
+        count Ram = new count();
+        int result = Ram.count(12345);
+        System.out.println("Answer:  " + result);
     }
 }
