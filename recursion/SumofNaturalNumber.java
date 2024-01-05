@@ -7,6 +7,7 @@ class findSum {
         if (i > 10) {
             return 0;
         } else {
+           
             return i + sumofOutput(i + 1);
         }
     }
@@ -15,6 +16,8 @@ class findSum {
 public class SumofNaturalNumber {
 public static void main(String[] args) {
      findSum ob=new findSum();
-     ob.sumofOutput(1);
+     int result=ob.sumofOutput(1);
+
+     System.out.println("Answer:    "+result);
 }
 }
