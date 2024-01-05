@@ -3,7 +3,8 @@ import java.lang.reflect.Array;
 import java.util.Scanner;
 class ArrayElement{
     void dispArray(int i,int arr[]){
-        if(i>10){
+        if(i==10){
+            System.out.println("");
             return;
         }
         else{
