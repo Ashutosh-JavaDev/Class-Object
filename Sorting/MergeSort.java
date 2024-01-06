@@ -35,5 +35,10 @@ class merge {
 }
 
 public class MergeSort {
+public static void main(String[]args){
+    merge ob=new merge();
+    int arr[]={7,8,1,2,5,9};
+    ob.Merge(arr, 0, arr.length-1);
 
+}
 }
