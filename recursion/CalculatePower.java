@@ -12,7 +12,7 @@ class power{
 public class CalculatePower {
     public static  void main(String[]args){
         power ob=new power();
-        int result=ob.powercal(2, 5);
+        int result=ob.powercal(5, 5);
         System.out.println("Answer: "+result);
 
 
