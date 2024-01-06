@@ -11,5 +11,9 @@ class fact{
     }
 }
 public class Factorial {
-    
+    public static void main(String[] args) {
+        fact ob=new fact();
+        int result=ob.fact(5);
+        System.out.println("Result: "+result);
+    }
 }
