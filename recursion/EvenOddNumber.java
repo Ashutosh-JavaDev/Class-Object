@@ -6,11 +6,14 @@ class check {
             System.out.println("");
             return;
         } else {
-            evenodd(arr, size - 1);
             if (arr[size - 1] % 2 == 0) {
                 System.out.print(arr[size - 1] + " ");
             }
+            evenodd(arr, size - 1);
 
+        }
+        if (size >= 0 && arr[size - 1] % 2 != 0) {
+            System.out.print(arr[size - 1] + " ");
         }
     }
 }
@@ -20,5 +23,6 @@ public class EvenOddNumber {
         check ob = new check();
         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         ob.evenodd(arr, 10);
+        System.out.println();
     }
 }
