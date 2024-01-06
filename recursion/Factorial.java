@@ -2,7 +2,7 @@ package recursion;
 import java.util.Scanner;
 class fact{
     int fact(int i){
-        if(i==1||i==0){
+        if(i<1){
             return i;
         }
         else{
