@@ -15,6 +15,7 @@ class reverse{
 }
 public class StringReverse {
     public static void main(String[] args) {
-        
+        reverse ob=new reverse();
+        ob.revString("Ashutosh", "Ashutosh".length());
     }
 }
