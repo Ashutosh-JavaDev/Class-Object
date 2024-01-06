@@ -3,7 +3,7 @@ package recursion;
 import java.util.Scanner;
 class reverse{
     void revString(String str,int l){
-        if(str.length()<2){
+        if(l==0){
             return;
         }
         else{
