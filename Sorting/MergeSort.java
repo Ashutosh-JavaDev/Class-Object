@@ -3,8 +3,8 @@ package Sorting;
 class merge {
     void Merge(int arr[], int s, int e) {
         int mid = s + (e - s) / 2;
-        int i = 0, j = mid, k = 0;
-        int arr2[] = new int[e+1];
+        int i = s, j = mid, k = 0;
+        int arr2[] = new int[e-s+1];
         while (i < mid && j < e) {
             if (arr[i] < arr[j]) {
                 arr2[k] = arr[i];
@@ -27,7 +27,7 @@ class merge {
             k++;
         }
         System.out.println("Array after Sort");
-        for (k = 0; k < e; k++) {
+        for (k = 0; k < arr2.length; k++) {
             System.out.print(arr2[k] + " ");
         }
     }
