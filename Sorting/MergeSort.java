@@ -10,6 +10,10 @@ class merge {
                 arr2[k] = arr[i];
                 i++;
                 k++;
+            } else {
+                arr2[k] = arr[j];
+                j++;
+                k++;
             }
         }
     }
