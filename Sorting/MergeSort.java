@@ -26,7 +26,10 @@ class merge {
             j++;
             k++;
         }
-
+        System.out.println("Array after Sort");
+        for (k = 0; k < e; k++) {
+            System.out.print(arr2[k] + " ");
+        }
     }
 
 }
