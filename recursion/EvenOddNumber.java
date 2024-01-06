@@ -2,7 +2,7 @@ package recursion;
 
 class check {
     void evenodd(int arr[], int size) {
-        if (size < 0) {
+        if (size-1 < 0) {
             System.out.println("");
             return;
         } else {
@@ -19,5 +19,9 @@ class check {
 }
 
 public class EvenOddNumber {
-
+    public static void main(String[]args){
+        check ob=new check();
+        int arr[]={1,2,3,4,5,6,7,8,9,10};
+        ob.evenodd(arr, 10);
+    }
 }
