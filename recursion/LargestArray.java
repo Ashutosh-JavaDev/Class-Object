@@ -6,12 +6,12 @@ class Largest {
     int MaxElement(int i, int arr[], int max) {
         if (i == arr.length) {
             return arr[max];
-        } else if (arr[i] > arr[max]) {
-
-            return MaxElement(i + 1, arr, i);
-        }
-        else{
-            return MaxElement(i+1,arr,  max);
+        } else {
+            if (arr[i] > arr[max]) {
+                return MaxElement(i + 1, arr, i);
+            } else {
+                return MaxElement(i + 1, arr, max);
+            }
         }
     }
 }
