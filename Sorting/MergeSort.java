@@ -16,7 +16,19 @@ class merge {
                 k++;
             }
         }
+        while (i < mid) {
+            arr2[k] = arr[i];
+            i++;
+            k++;
+        }
+        while (j < e) {
+            arr2[k] = arr[j];
+            j++;
+            k++;
+        }
+
     }
+
 }
 
 public class MergeSort {
