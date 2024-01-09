@@ -14,3 +14,13 @@ public class stu1 {
         return arr;
     }
 }
+class sumArray extends stu1{
+    public int sum(){
+       int arr[]= get1();
+        int sum=0;
+        for(int i=0;i<5;i++){
+            sum=sum+arr[i];
+        }
+        return sum;
+    }
+}
