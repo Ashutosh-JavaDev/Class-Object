@@ -1,7 +1,6 @@
 package JavaPackage;
 
 import JavaPackage.Stu1.stu1;
-import JavaPackage.Stu1.sumarray;
 import JavaPackage.Stu2.stu2;
 import java.util.Arrays;
 

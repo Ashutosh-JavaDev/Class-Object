@@ -10,16 +10,17 @@ public class stu2 {
         for (int i = 0; i < 5; i++) {
             arr[i] = sc.nextInt();
         }
+        int result=sum();
+        System.out.println("Sum of  Stu2:   "+result);
         System.out.println("Data Display");
         return arr;
     }
-}
-class sumArray extends stu2{
-    public int sum(){
-       int arr[]= get2();
-        int sum=0;
-        for(int i=0;i<5;i++){
-            sum=sum+arr[i];
+
+    public int sum() {
+        int arr[] = get2();
+        int sum = 0;
+        for (int i = 0; i < 5; i++) {
+            sum = sum + arr[i];
         }
         return sum;
     }
