@@ -6,7 +6,7 @@ public class stu1 {
     public int[] get1() {
         Scanner sc = new Scanner(System.in);
         int arr[] = new int[5];
-        System.out.println("Enter the data in Stu2 Array");
+        System.out.println("Enter the data in Stu1 Array");
         for (int i = 0; i < 5; i++) {
             arr[i] = sc.nextInt();
         }
