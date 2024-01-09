@@ -11,8 +11,12 @@ public class abc1 {
 
         int arr1[] = ob1.get1();
         System.out.println("arr1: " + Arrays.toString(arr1));
+        int sum1=ob1.sum1();
+        System.out.println(sum1);
 
         int arr2[] = ob2.get2();
         System.out.println("arr2: " + Arrays.toString(arr2));
+        int sum2=ob2.sum2();
+        System.out.println(sum2);
     }
 }
