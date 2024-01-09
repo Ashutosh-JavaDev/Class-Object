@@ -11,14 +11,13 @@ public class stu1 {
             arr[i] = sc.nextInt();
         }
         System.out.println("Data Display");
-        int result = sum1();
+        int result = sum1(arr);
         System.out.println("Sum of Stu1 :" + result);
         return arr;
 
     }
 
-    public int sum1() {
-        int arr[] = get1();
+    public int sum1(int arr[]) {
         int sum = 0;
         for (int i = 0; i < 5; i++) {
             sum = sum + arr[i];
