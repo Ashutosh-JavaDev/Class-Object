@@ -14,12 +14,11 @@ class aa1 {
                 arr[i] = sc.nextInt();
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(e);
-            } finally {
-                System.out.println("Array Index");
-                for (int j = 0; j < 4; j++) {
-                    System.out.println("arr[" + j + "] = " + arr[j]);
-                }
             }
+        }
+        System.out.println("Array Index");
+        for (int j = 0; j < 4; j++) {
+            System.out.println("arr[" + j + "] = " + arr[j]);
         }
     }
 }
