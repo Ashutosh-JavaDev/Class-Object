@@ -40,6 +40,9 @@ class odd extends all implements Runnable{
                 }
             }
         }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println(e);
+        }
     }
 }
 public class evenOddThread {
