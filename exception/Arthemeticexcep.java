@@ -39,6 +39,6 @@ public class Arthemeticexcep {
         ob.takea(sc.nextInt());
         System.out.println("Enter the VAlue in b");
         ob.takeb(sc.nextInt());
-
+        ob.disp();
     }
 }
