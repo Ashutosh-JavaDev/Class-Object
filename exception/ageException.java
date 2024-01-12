@@ -18,5 +18,8 @@ class detail{
     }
 }
 public class ageException {
-    
+    public static void main(String[]args){
+        detail ob=new detail();
+        ob.get();
+    }
 }
