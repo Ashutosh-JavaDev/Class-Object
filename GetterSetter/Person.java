@@ -24,5 +24,15 @@ class person {
 }
 
 public class Person {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        person ob=new person();
+        System.out.println("Enter Name");
+        ob.disp(sc.nextLine());
+        System.out.println("Enter Age");
+        ob.dispage(sc.nextInt());
+        System.out.println("Name:   "+ob.putNAme());
+        System.out.println("Age:    "+ob.putage());
 
+    }
 }
