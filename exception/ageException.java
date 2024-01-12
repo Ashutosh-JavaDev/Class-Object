@@ -7,6 +7,14 @@ class detail{
         String Name=sc.nextLine();
         System.out.println("Enter Age");
         int age=sc.nextInt();
+      try{
+       if(age>0){
+        System.out.println("Age:    "+age);
+       }
+      }
+      catch(IllegalArgumentException e){
+        System.out.println(e);
+      }
     }
 }
 public class ageException {
