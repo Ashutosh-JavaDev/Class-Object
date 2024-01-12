@@ -1,7 +1,7 @@
 package exception;
 import java.util.Scanner;
-class even{
-    void run(){
+class even extends Thread{
+    public void run(){
         Scanner sc=new Scanner(System.in);
         int arr[]=new int[10];
 
@@ -19,10 +19,13 @@ class even{
 
         }
         catch(ArrayIndexOutOfBoundsException e){
-
+            System.out.println(e);
         }
     }
 }
 public class evenOddThread {
-    
+    public static void main(String[] args) {
+        even ob1=new even();
+        ob1.start();
+    }
 }
