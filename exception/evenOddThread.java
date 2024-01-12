@@ -1,10 +1,12 @@
 package exception;
 import java.util.Scanner;
-class even extends Thread{
-    public void run(){
-        Scanner sc=new Scanner(System.in);
-        int arr[]=new int[10];
+class all{
+    Scanner sc=new Scanner(System.in);
+    int arr[]=new int[10];
 
+}
+class even extends all implements Runnable{
+    public void run(){
         try{
             System.out.println("Enter the value in the Array");
             for(int i=0;i<10;i++){
@@ -24,14 +26,15 @@ class even extends Thread{
     }
 }
 // ODD
-class odd extends Thread{
-    public void run(){
+// class odd extends Thread{
+//     public void run(){
         
-    }
-}
+//     }
+// }
 public class evenOddThread {
     public static void main(String[] args) {
         even ob1=new even();
-        ob1.start();
+       Thread t1=new Thread(ob1);
+       t1.start();
     }
 }
