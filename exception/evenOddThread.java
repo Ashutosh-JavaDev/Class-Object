@@ -29,7 +29,16 @@ class even extends all implements Runnable{
 class odd extends all implements Runnable{
     public void run(){
         try{
-            
+            System.out.println("Enter the Value for Printing odd Number");
+            for(int i=0;i<10;i++){
+                arr[i]=sc.nextInt();
+            }
+            System.out.println("Odd Number");
+            for(int i=0;i<10;i++){
+                if(arr[i]%2==0 && arr[i]>10){
+                    System.out.println(arr[i]+" ");
+                }
+            }
         }
     }
 }
