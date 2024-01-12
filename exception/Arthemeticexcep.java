@@ -34,7 +34,11 @@ class excep {
 public class Arthemeticexcep {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        excep ob=new excep();
         System.out.println("Enter the value in a");
-        int a = sc.nextInt();
+        ob.takea(sc.nextInt());
+        System.out.println("Enter the VAlue in b");
+        ob.takeb(sc.nextInt());
+
     }
 }
