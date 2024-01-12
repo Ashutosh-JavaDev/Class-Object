@@ -26,11 +26,13 @@ class even extends all implements Runnable{
     }
 }
 // ODD
-// class odd extends Thread{
-//     public void run(){
-        
-//     }
-// }
+class odd extends all implements Runnable{
+    public void run(){
+        try{
+            
+        }
+    }
+}
 public class evenOddThread {
     public static void main(String[] args) {
         even ob1=new even();
