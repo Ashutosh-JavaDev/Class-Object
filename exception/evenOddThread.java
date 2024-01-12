@@ -23,6 +23,12 @@ class even extends Thread{
         }
     }
 }
+// ODD
+class odd extends Thread{
+    public void run(){
+        
+    }
+}
 public class evenOddThread {
     public static void main(String[] args) {
         even ob1=new even();
