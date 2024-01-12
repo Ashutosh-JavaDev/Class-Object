@@ -48,7 +48,10 @@ class odd extends all implements Runnable{
 public class evenOddThread {
     public static void main(String[] args) {
         even ob1=new even();
+        odd ob2=new odd();
        Thread t1=new Thread(ob1);
+       Thread t2=new Thread(ob2);
        t1.start();
+       t2.start();
     }
 }
