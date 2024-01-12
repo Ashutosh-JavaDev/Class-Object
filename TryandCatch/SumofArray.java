@@ -25,5 +25,7 @@ class aa2 {
 }
 
 public class SumofArray {
-
+    public static void main(String[]args){
+        new aa2().sumofArray();
+    }
 }
