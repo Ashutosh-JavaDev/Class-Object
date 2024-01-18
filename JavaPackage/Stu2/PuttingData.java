@@ -10,6 +10,12 @@ class putData{
 }
 public class PuttingData {
     public static void main(String[] args) {
-        
+        putData ram[]=new putData[5];
+        System.out.println("---------------------------------------------");
+        System.out.println("Student details");
+
+        for(int i=0;i<5;i++){
+            System.out.println(ram[i]);
+        }
     }
 }
