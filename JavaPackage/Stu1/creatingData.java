@@ -18,6 +18,7 @@ public class creatingData {
         createData ob[]=new createData[5];
         System.out.println("Enter 5 Student Detail");
         for(int i=0;i<5;i++){
+            ob[i]=new createData();
             ob[i].takeInput();
         }
 

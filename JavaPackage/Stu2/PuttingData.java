@@ -15,6 +15,7 @@ public class PuttingData {
         System.out.println("Student details");
 
         for(int i=0;i<5;i++){
+            ram[i]=new putData();
             System.out.println(ram[i]);
         }
     }
