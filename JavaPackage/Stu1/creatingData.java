@@ -14,5 +14,9 @@ class createData{
     }
 }
 public class creatingData {
-    
+    public static void main(String[] args) {
+        createData ob=new createData();
+        System.out.println("How Many Data want to add in Object");
+        
+    }
 }
