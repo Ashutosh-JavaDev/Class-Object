@@ -1,6 +1,6 @@
 package JavaPackage.Stu2;
 
-class PuttingData {
+public class PuttingData {
     String Name;
     int age, roll;
 

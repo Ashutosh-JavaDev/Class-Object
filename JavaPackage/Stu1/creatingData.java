@@ -5,22 +5,14 @@ class createData{
     int age,roll;
     void takeInput(){
         Scanner sc=new Scanner(System.in);
+       for(int i=0;i<5;i++){
         System.out.println("Enter Name");
         Name=sc.nextLine();
         System.out.println("Enter Roll");
         roll=sc.nextInt();
         System.out.println("Enter Age");
         age=sc.nextInt();
+       }
     }
 }
-public class creatingData {
-    public static void main(String[] args) {
-        createData ob[]=new createData[5];
-        System.out.println("Enter 5 Student Detail");
-        for(int i=0;i<5;i++){
-            ob[i]=new createData();
-            ob[i].takeInput();
-        }
 
-    }
-}
