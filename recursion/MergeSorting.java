@@ -32,5 +32,9 @@ class mergeSort{
     }
 }
 public class MergeSorting {
-
+    public static void main(String[] args) {
+        mergeSort ob=new mergeSort();
+        int arr[]={3,1,5,2,64,23,0,89};
+        
+    }
 }
