@@ -25,6 +25,9 @@ class mergeSort{
             mergeArray[k]=arr[j];
             j++;k++;
         }
+        for(i=0,j=s;i<mergeArray.length;i++,j++){
+            
+        }
 
     }
 }
