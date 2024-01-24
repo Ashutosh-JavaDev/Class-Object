@@ -44,5 +44,10 @@ public class MergeSorting {
         mergeSort ob=new mergeSort();
         int arr[]={3,1,5,2,64,23,0,89};
         ob.merged(arr, 0, arr.length-1);
+        System.out.println("Sorted Array");
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+
+        }
     }
 }
