@@ -5,7 +5,7 @@ class mergeSort{
         int mergeArray[]=new int[e-s+1];
         int i=s,j=mid+1,k=0;
         while(i<=mid&& j<=e){
-            if(arr[i]>=arr[j]){
+            if(arr[i]>arr[j]){
                 mergeArray[k]=arr[i];
                 i++;
                 k++;
@@ -26,12 +26,12 @@ class mergeSort{
             j++;k++;
         }
         for(i=0,j=s;i<mergeArray.length;i++,j++){
-            mergeArray[i]=arr[j];
+            arr[j]=mergeArray[i];
         }
 
     }
     void merged(int arr[],int s,int e){
-        if(s>e){
+        if(s<e){
             int mid=s+(e-s)/2;
             merged(arr, s, mid);
             merged(arr, mid+1, e);
